@@ -1,3 +1,4 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+My API
+=============
 
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-nodejs/README.md
+[API](http://api-ntsh.rhcloud.com/) hosted on [OPENSHIFT](https://www.openshift.com/)
