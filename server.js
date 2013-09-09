@@ -175,7 +175,7 @@ var SampleApp = function() {
       if(req.params.category == 'softwares' ||
           req.params.category == 'books' ||
             req.params.category == 'movies') {
-        database.collection('likes').find({'category': req.params.category}, {_id: 0}).sort({'weight': -1}).toArray(function(err, docs) {
+        database.collection('likes').find({'category': req.params.category}, {_id: 0, weight: 0}).sort({'weight': -1}).toArray(function(err, docs) {
           if(err) {
             res.send(500, { 'error': 'Something blew up!' });
           } else {

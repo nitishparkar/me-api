@@ -1,0 +1,52 @@
+use api;
+
+db.info.insert({ "age": "22", "city": "Mumbai" });
+
+db.web.insert({ "github": "https://github.com/nitishsp",
+  "gplus": "https://plus.google.com/106062886030684944859",
+  "linkedin": "http://in.linkedin.com/in/nitishparkar",
+  "facebook": "https://www.facebook.com/nitishparkar",
+  "twitter": "https://twitter.com/nitishsp"
+});
+
+db.organizations.insert([
+  { "name": "Genii", "location": "Wadala, Mumbai", "website": "http://genii.in", "category": "work"},
+  { "name": "Aryan", "location": "Girgaon, Mumbai", "website": "", "category": "edu" },
+  { "name": "B.G.I.T.", "location": "Mumbai Central, Mumbai", "website": "http://mmbgit.org", "category": "edu" },
+  { "name": "Vidyalankar", "location": "Wadala, Mumbai", "website": "http://vit.edu.in", "category": "edu" }
+]);
+
+db.likes.insert([
+  {
+    "name": "Pursuit of Happyness", "category": "movies", "weight": 100, "details": {
+      "language": "English"
+    }
+  },
+  {
+    "name": "Balak Palak", "category": "movies", "weight": 70, "details": {
+      "language": "Marathi"
+    }
+  },
+  {
+    "name": "3 Idiots", "category": "movies", "weight": 90, "details": {
+      "language": "Hindi"
+    }
+  },
+  {
+    "name": "Shala", "category": "books", "weight": 100, "details": {
+      "language": "Marathi"
+    }
+  },
+  {
+    "name": "Harry Potter Series", "category": "books", "weight": 90, "details": {
+      "language": "English"
+    }
+  },
+  {
+    "name": "Sublime Text", "category": "softwares", "weight": 100, "details": {
+      "website": "http://www.sublimetext.com/"
+    }
+  }
+]);
+
+db.createCollection("feedbacks");
