@@ -1,22 +1,23 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "NitishAPI",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "A personal API",
   "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
+    "Nitish",
+    "Parkar",
+    "api"
   ],
+  "homepage": "http://api-ntsh.rhcloud.com/",
+
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url":  "http://www.openshift.com/"
+    "name": "Nitish Parkar",
+    "email": "nitish@example.org",
+    "url":  "http://nitishsp.github.io/"
   },
-  "homepage": "http://www.openshift.com/",
+
   "repository": {
     "type": "git",
-    "url": "https://gitub.com/openshift/origin-server"
+    "url": "https://github.com/nitishsp/me-api"
   },
 
   "engines": {
@@ -25,6 +26,8 @@
   },
 
   "dependencies": {
+    "express": "3.x",
+    "mongodb": ">=0.9.6"
   },
   "devDependencies": {},
   "bundleDependencies": [],
